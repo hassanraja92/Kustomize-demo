@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: darwin
+  name: my-app
 spec:
   selector:
     matchLabels:
-      run: darwin
+      run: my-app
   replicas: 2
   template:
     metadata:
       labels:
-        run: darwin
+        run: my-app
     spec:
       containers:
-      - name: darwin-container
+      - name: calculator-app
         image: httpd
