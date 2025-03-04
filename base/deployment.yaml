@@ -1,1 +1,17 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: darwin
+spec:
+  selector:
+    matchLabels:
+      run: darwin
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: darwin
+    spec:
+      containers:
+      - name: darwin-container
+        image: httpd
