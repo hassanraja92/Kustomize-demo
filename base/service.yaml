@@ -2,14 +2,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: darwin
+  name: my-app
   labels:
-    run: darwin
+    run: my-app
 spec:
   ports:
   - port: 80
     protocol: TCP
   selector:
-    run: darwin
+    run: my-app
 
 
