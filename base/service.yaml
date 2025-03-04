@@ -1,1 +1,15 @@
 
+apiVersion: v1
+kind: Service
+metadata:
+  name: darwin
+  labels:
+    run: darwin
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: darwin
+
+
