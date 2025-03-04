@@ -13,5 +13,5 @@ spec:
         run: my-app
     spec:
       containers:
-      - name: calculator-app
+      - name: darwin-app
         image: httpd
